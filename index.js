@@ -29,10 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const certificateHTML = `
       <h1>Certificate of Completion</h1>
+      <p>This is to certify that</p>
       <h3>${studentName}</h3>
-      <p>Congratulations on completing ${courseName}!</p>
+      <p>has almost completed the </p>
+      <p> ${courseName}!</p>
        <p> ${personalMessage}</p>
       <p> course: ${courseName}!</p>
+      <p> with legendary perseverance and cat-like curiosity for never giving up 🏆🐱</p>
       <img src="logo.png" alt="Logo" class="logo">
       `;
 
