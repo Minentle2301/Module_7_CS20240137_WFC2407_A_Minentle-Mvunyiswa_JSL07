@@ -112,4 +112,9 @@ button {
 button:hover {
   background-color: #5d5f5e;
 }
-
+.logo {
+  height: auto;
+  width: 250px;
+  display: block;
+  margin-bottom: 20px;
+}

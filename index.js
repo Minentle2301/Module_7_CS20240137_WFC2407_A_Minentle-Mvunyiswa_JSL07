@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
   
     cardForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput = document.getElementById('personalMessage') ;
+      const courseNameInput = document.getElementById('courseName') ; 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
@@ -25,9 +26,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
+
+      const certificateHTML = `
+      <h1>Certificate of Completion</h1>
       <h3>${studentName}</h3>
-    `;
+      <p>Congratulations on completing ${courseName}!</p>
+       <p> ${personalMessage}</p>
+      <p> course: ${courseName}!</p>
+      <img src="logo.png" alt="Logo" class="logo">
+      `;
+
+    // Set the certificate content in the modal
+    certificateContent.innerHTML = certificateHTML;
+
     
       //  Display the modal
       modal.style.display = 'block';
@@ -39,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('', function () {
-      
+    closeModal.addEventListener('click', function () {
+      modal.style.display = 'none';
     });
+
   });
-  
+   
