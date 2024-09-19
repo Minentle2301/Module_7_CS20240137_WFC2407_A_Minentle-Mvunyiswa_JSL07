@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <h3>${studentName}</h3>
       <p>has almost completed the </p>
       <p> ${courseName}!</p>
-      <p> course: ${courseName}!</p>
-      <p>with legendary perseverance and cat-like curiosity for never giving up🐱</p>
+      <p>with legendary perseverance and cat-like curiosity for never giving up🏆</p>
       <img src="logo.png" alt="Logo" class="logo">
       <p> ${personalMessage}</p>
       `;
